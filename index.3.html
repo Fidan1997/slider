@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<script src="jc/jq.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="main">
+			<div class="container">	
+			<ul>
+					<li><img class="images" src="img/img1.jpg"/></li>
+					<li><img src="img/img2.jpg" /></li>
+					<li><img src="img/img3.jpg" /></li>
+					<li><img src="img/img4.jpg" /></li>
+					<li><img src="img/img5.jpg" /></li>
+					<li><img src="img/img6.jpg" /></li>
+					<li><img src="img/img7.jpg" /></li>
+					<li><img src="img/img8.jpg" /></li>
+					<li><img src="img/img9.jpg" /></li>
+				</ul>
+		    </div>
+
+		</div>
+
+
+<div class="main2">
+                <ul>
+					<li class="yuxari"><img  src="img/img1.jpg"></li>
+					<li class="asagi"><img src="img/img2.jpg" /></li>
+					<li class="up1"><img src="img/img3.jpg" /></li>
+					<li class="down1"><img src="img/img4.jpg" /></li>
+					<li class="up2"><img src="img/img5.jpg" /></li>
+					<li class="down2"><img src="img/img6.jpg" /></li>
+					<li class="up3"><img src="img/img7.jpg" /></li>
+					<li class="down3"><img src="img/img8.jpg" /></li>
+					<li ><img src="img/img9.jpg" /></li>
+				</ul>
+</div>
+<button>close</button>
+</body>
+</html>
+<script>
+$(document).ready(function() {
+    
+ $(".images").on("click", function(){
+$(".main2").show();
+ });
+
+$("button").on("click",function() {
+ 	$(".main2").hide()
+});
+
+
+
+});
+$(".yuxari").click(function() {
+    $('.main2').animate({
+        scrollTop: $(".asagi").offset().top},
+        'slow');
+});
+$(".up1").click(function() {
+    $('.main2').animate({
+        scrollTop: $(".down1").offset().top},
+        'slow');
+});
+$(".up1").click(function() {
+    $('.main2').animate({
+        scrollTop: $(".down1").offset().top},
+        'slow');
+});
+$(".up1").click(function() {
+    $('.main2').animate({
+        scrollTop: $(".down1").offset().top},
+        'slow');
+});
+</script>
